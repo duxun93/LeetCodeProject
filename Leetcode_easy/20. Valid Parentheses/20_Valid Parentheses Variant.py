@@ -13,14 +13,17 @@ def isValid(s):
         if len(L) == len(P):
             M.append(L)
             M.append(P)
-            P = 0
-            L = 0
+            P = []
+            L = []
     for i in range(0,len(M)-1,2) :
-        if M[i] == M[i+1]: 
+        if M[i] == list(reversed(M[i+1])) : 
             if i+2 == len(M):
                 print('true')
+                break
             else :
                 continue 
         else :
             print('false')
-            break 
+            break
+#isValid('{[()]}{[]}') 
+isValid('{[(]}{[)]}{[()]}{[]}')#这里有bug，还没修复。
