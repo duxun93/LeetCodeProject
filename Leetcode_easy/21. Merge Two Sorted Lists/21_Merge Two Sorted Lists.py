@@ -7,7 +7,7 @@ def mergeTwoLists(l1, l2):
     for j in l2:
         if j.isdigit() :
             L.append(j)
-    L = sorted(L)
+    L = sorted(L)##sorted()用于排序
     s = 's'
     for k in L :
         s = s + '->' + str(k)  
