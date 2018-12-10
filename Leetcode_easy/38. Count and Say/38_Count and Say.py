@@ -24,4 +24,4 @@ def countAndSay(n):
         L = countAndSay(n-1)
         p = str(temp(L)) 
         return p
-print(countAndSay(4))
+print(countAndSay(10))
