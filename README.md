@@ -1,4 +1,4 @@
 # LeetCodeProject
 leetcode
-LeetCode easy 
+LeetCode easy
 contains tree array and so on
